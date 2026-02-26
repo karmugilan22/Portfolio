@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karmugilan G R | AI/ML Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="prog-bar"></div>
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="nb-k">K</span>armugilan<span class="nb-dot">.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+                <i class="fas fa-bars" style="color:var(--text)"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+                <ul class="navbar-nav gap-1 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="mailto:grkarmugilan@gmail.com" class="btn btn-primary-glow rounded-pill px-4 py-2">
+                            <i class="fas fa-paper-plane me-2"></i>Hire Me
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-wrap" id="home">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+        <div class="container hero-inner">
+            <div class="row align-items-center gy-5 justify-content-between">
+                <div class="col-lg-6 reveal">
+                    <div class="avail-chip mb-4">
+                        <span class="avail-dot"></span> Open to Opportunities
+                    </div>
+                    <h1 class="hero-h1">Hello, I'm<br>
+                        <span class="text-shimmer">Karmugilan G R</span>
+                    </h1>
+                    <div class="role-row my-4">
+                        <span class="role-tag">🤖 AI/ML Developer</span>
+                        <span class="role-tag">🔬 Deep Learning</span>
+                        <span class="role-tag">💬 NLP Engineer</span>
+                    </div>
+                    <p class="hero-p mb-5">
+                        Building intelligent systems at the intersection of Computer Vision & NLP.
+                        Passionate about turning research into real-world AI solutions.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#projects" class="btn btn-primary-glow btn-lg rounded-pill px-5">
+                            <i class="fas fa-rocket me-2"></i>Projects
+                        </a>
+                        <a href="assets/resume.pdf" download class="btn btn-ghost btn-lg rounded-pill px-5">
+                            <i class="fas fa-download me-2"></i>Resume
+                        </a>
+                    </div>
+                    <div class="s-icons mt-5">
+                        <a href="https://linkedin.com/in/karmugilan-g-r" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/karmugilan22" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:grkarmugilan@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+919344486055"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center reveal delay-2">
+                    <div class="photo-orb">
+                        <div class="orb-r r1"></div>
+                        <div class="orb-r r2"></div>
+                        <div class="orb-r r3"></div>
+                        <div class="orb-core">
+                            <img src="assets/profile.jpg" alt="Karmugilan G R" class="orb-img"
+                                onerror="this.src='https:ui-avatars.com/api/?name=KGR&background=0ea5e9&color=fff&size=400&bold=true'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-band reveal delay-3">
+                <div class="stat-box">
+                    <div class="stat-n" data-to="1">0</div>
+                    <div class="stat-l">Year Exp.</div>
+                </div>
+                <div class="stat-sep"></div>
+                <div class="stat-box">
+                    <div class="stat-n" data-to="5">0</div>
+                    <div class="stat-l">Projects</div>
+                </div>
+                <div class="stat-sep"></div>
+                <div class="stat-box">
+                    <div class="stat-n" data-to="10">0</div>
+                    <div class="stat-l">Technologies</div>
+                </div>
+                <div class="stat-sep"></div>
+                <div class="stat-box">
+                    <div class="stat-n" data-to="3">0</div>
+                    <div class="stat-l">Certifications</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="sec">
+        <div class="container">
+            <div class="sec-head text-center reveal">
+                <span class="sec-eyebrow">Who Am I</span>
+                <h2 class="sec-title">About Me</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-9 reveal delay-1">
+                    <div class="gcard p-5">
+                        <div class="gcard-glow"></div>
+                        <p class="about-body">
+                            I'm a skilled <strong>AI/ML enthusiast</strong> with hands-on experience in innovative
+                            solutions for
+                            <strong>Computer Vision</strong> and <strong>NLP</strong>. My expertise in Python, Deep
+                            Learning,
+                            and algorithm design has contributed to impactful research projects. I excel in team
+                            collaboration
+                            and deploying robust automated pipelines and 3D visualization tools.
+                        </p>
+                        <div class="info-grid">
+                            <div class="info-cell">
+                                <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div><small>Location</small><span>Namakkal, India</span></div>
+                            </div>
+                            <div class="info-cell">
+                                <div class="info-icon"><i class="fas fa-phone"></i></div>
+                                <div><small>Phone</small><span>+91 9344486055</span></div>
+                            </div>
+                            <div class="info-cell">
+                                <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                                <div><small>Email</small><span>grkarmugilan@gmail.com</span></div>
+                            </div>
+                            <div class="info-cell">
+                                <div class="info-icon"><i class="fas fa-language"></i></div>
+                                <div><small>Languages</small><span>English, Tamil</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="sec sec-alt">
+        <div class="container">
+            <div class="sec-head text-center reveal">
+                <span class="sec-eyebrow">Expertise</span>
+                <h2 class="sec-title">Technical Skills</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3 reveal delay-1">
+                    <div class="skill-card">
+                        <div class="sk-icon" style="background:linear-gradient(135deg,#0ea5e9,#6366f1)"><i
+                                class="fas fa-code"></i></div>
+                        <h4 class="sk-title">Languages</h4>
+                        <div class="sk-list">
+                            <div class="sk-row"><span>Python</span>
+                                <div class="sk-bar">
+                                    <div class="sk-fill" data-w="92"
+                                        style="background:linear-gradient(90deg,#0ea5e9,#6366f1)"></div>
+                                </div>
+                            </div>
+                            <div class="sk-row"><span>JavaScript</span>
+                                <div class="sk-bar">
+                                    <div class="sk-fill" data-w="78"
+                                        style="background:linear-gradient(90deg,#0ea5e9,#6366f1)"></div>
+                                </div>
+                            </div>
+                            <div class="sk-row"><span>TypeScript</span>
+                                <div class="sk-bar">
+                                    <div class="sk-fill" data-w="65"
+                                        style="background:linear-gradient(90deg,#0ea5e9,#6366f1)"></div>
+                                </div>
+                            </div>
+                            <div class="sk-row"><span>HTML/CSS</span>
+                                <div class="sk-bar">
+                                    <div class="sk-fill" data-w="85"
+                                        style="background:linear-gradient(90deg,#0ea5e9,#6366f1)"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 reveal delay-2">
+                    <div class="skill-card">
+                        <div class="sk-icon" style="background:linear-gradient(135deg,#10b981,#0ea5e9)"><i
+                                class="fas fa-brain"></i></div>
+                        <h4 class="sk-title">AI / ML</h4>
+                        <div class="sk-list">
+                            <div class="sk-row"><span>TensorFlow</span>
+                                <div class="sk-bar">
+                                    <div class="sk-fill" data-w="85"
+                                        style="background:linear-gradient(90deg,#10b981,#0ea5e9)"></div>
+                                </div>
+                            </div>
+                            <div class="sk-row"><span>PyTorch</span>
+                                <div class="sk-bar">
+                                    <div class="sk-fill" data-w="80"
+                                        style="background:linear-gradient(90deg,#10b981,#0ea5e9)"></div>
+                                </div>
+                            </div>
+                            <div class="sk-row"><span>Hugging Face</span>
+                                <div class="sk-bar">
+                                    <div class="sk-fill" data-w="75"
+                                        style="background:linear-gradient(90deg,#10b981,#0ea5e9)"></div>
+                                </div>
+                            </div>
+                            <div class="sk-row"><span>OpenCV</span>
+                                <div class="sk-bar">
+                                    <div class="sk-fill" data-w="82"
+                                        style="background:linear-gradient(90deg,#10b981,#0ea5e9)"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 reveal delay-3">
+                    <div class="skill-card">
+                        <div class="sk-icon" style="background:linear-gradient(135deg,#f59e0b,#ef4444)"><i
+                                class="fas fa-globe"></i></div>
+                        <h4 class="sk-title">Web Dev</h4>
+                        <div class="sk-list">
+                            <div class="sk-row"><span>React.js</span>
+                                <div class="sk-bar">
+                                    <div class="sk-fill" data-w="72"
+                                        style="background:linear-gradient(90deg,#f59e0b,#ef4444)"></div>
+                                </div>
+                            </div>
+                            <div class="sk-row"><span>Node.js</span>
+                                <div class="sk-bar">
+                                    <div class="sk-fill" data-w="68"
+                                        style="background:linear-gradient(90deg,#f59e0b,#ef4444)"></div>
+                                </div>
+                            </div>
+                            <div class="sk-row"><span>Flask</span>
+                                <div class="sk-bar">
+                                    <div class="sk-fill" data-w="80"
+                                        style="background:linear-gradient(90deg,#f59e0b,#ef4444)"></div>
+                                </div>
+                            </div>
+                            <div class="sk-row"><span>FastAPI</span>
+                                <div class="sk-bar">
+                                    <div class="sk-fill" data-w="75"
+                                        style="background:linear-gradient(90deg,#f59e0b,#ef4444)"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 reveal delay-4">
+                    <div class="skill-card">
+                        <div class="sk-icon" style="background:linear-gradient(135deg,#8b5cf6,#ec4899)"><i
+                                class="fas fa-tools"></i></div>
+                        <h4 class="sk-title">Tools</h4>
+                        <div class="sk-list">
+                            <div class="sk-row"><span>GitHub</span>
+                                <div class="sk-bar">
+                                    <div class="sk-fill" data-w="88"
+                                        style="background:linear-gradient(90deg,#8b5cf6,#ec4899)"></div>
+                                </div>
+                            </div>
+                            <div class="sk-row"><span>Blender</span>
+                                <div class="sk-bar">
+                                    <div class="sk-fill" data-w="70"
+                                        style="background:linear-gradient(90deg,#8b5cf6,#ec4899)"></div>
+                                </div>
+                            </div>
+                            <div class="sk-row"><span>UiPath</span>
+                                <div class="sk-bar">
+                                    <div class="sk-fill" data-w="65"
+                                        style="background:linear-gradient(90deg,#8b5cf6,#ec4899)"></div>
+                                </div>
+                            </div>
+                            <div class="sk-row"><span>VS Code</span>
+                                <div class="sk-bar">
+                                    <div class="sk-fill" data-w="90"
+                                        style="background:linear-gradient(90deg,#8b5cf6,#ec4899)"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="sec">
+        <div class="container">
+            <div class="sec-head text-center reveal">
+                <span class="sec-eyebrow">Career</span>
+                <h2 class="sec-title">Experience</h2>
+            </div>
+            <div class="exp-wrap reveal delay-1">
+                <div class="exp-line-top"></div>
+                <div class="exp-dot"><i class="fas fa-briefcase"></i></div>
+                <div class="gcard p-4 p-md-5 mt-4">
+                    <div class="d-flex justify-content-between align-items-start flex-wrap gap-3 mb-4">
+                        <div>
+                            <h3 class="exp-title">AI Research & Development Intern</h3>
+                            <p class="exp-co"><i class="fas fa-building me-2"></i>iGradAI Labs</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center flex-wrap">
+                            <span class="date-pill"><i class="fas fa-calendar-alt me-1"></i>Sep – Nov 2025</span>
+                            <span class="mode-pill">Online</span>
+                        </div>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Engineered a Deep Learning system using <strong>Pose Estimation</strong> for automated
+                            cricket umpire signal detection.</li>
+                        <li>Developed a Mobile Application to automate <strong>Agile methodology</strong> and project
+                            management workflows.</li>
+                    </ul>
+                    <div class="tag-row">
+                        <span>Deep Learning</span><span>Computer Vision</span><span>Pose Estimation</span><span>Mobile
+                            App</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="sec sec-alt">
+        <div class="container">
+            <div class="sec-head text-center reveal">
+                <span class="sec-eyebrow">Portfolio</span>
+                <h2 class="sec-title">Featured Projects</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 reveal delay-1">
+                    <div class="proj-card" style="--ac:#0ea5e9">
+                        <div class="pc-top">
+                            <div class="pc-icon" style="background:rgba(14,165,233,.15);color:#0ea5e9"><i
+                                    class="fas fa-wave-square"></i></div><a href="#" class="pc-gh"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                        <h4 class="pc-title">Ultrasound Simulator</h4>
+                        <p class="pc-desc">Prototype using embedded systems and sensor integration to emulate probe
+                            movement and imaging for medical training.</p>
+                        <div class="pc-tags"><span>Embedded</span><span>Sensors</span><span>Medical Tech</span></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal delay-2">
+                    <div class="proj-card" style="--ac:#10b981">
+                        <div class="pc-top">
+                            <div class="pc-icon" style="background:rgba(16,185,129,.15);color:#10b981"><i
+                                    class="fas fa-robot"></i></div><a href="#" class="pc-gh"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                        <h4 class="pc-title">T5 Generative AI</h4>
+                        <p class="pc-desc">Fine-tuned T5 transformers for automated text summarization and open-domain
+                            question answering.</p>
+                        <div class="pc-tags"><span>NLP</span><span>T5</span><span>Transformers</span></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal delay-3">
+                    <div class="proj-card" style="--ac:#f59e0b">
+                        <div class="pc-top">
+                            <div class="pc-icon" style="background:rgba(245,158,11,.15);color:#f59e0b"><i
+                                    class="fas fa-person-running"></i></div><a href="#" class="pc-gh"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                        <h4 class="pc-title">AI Cricket Umpire</h4>
+                        <p class="pc-desc">Web-based deep learning platform for automated umpire decision prediction
+                            using computer vision.</p>
+                        <div class="pc-tags"><span>CV</span><span>Deep Learning</span><span>Flask</span></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal delay-1">
+                    <div class="proj-card" style="--ac:#8b5cf6">
+                        <div class="pc-top">
+                            <div class="pc-icon" style="background:rgba(139,92,246,.15);color:#8b5cf6"><i
+                                    class="fas fa-file-pdf"></i></div><a href="#" class="pc-gh"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                        <h4 class="pc-title">Document Retrieval</h4>
+                        <p class="pc-desc">Web automation tool to programmatically fetch and download legal PDF
+                            documents with smart parsing.</p>
+                        <div class="pc-tags"><span>Automation</span><span>Web Scraping</span><span>Python</span></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal delay-2">
+                    <div class="proj-card" style="--ac:#ec4899">
+                        <div class="pc-top">
+                            <div class="pc-icon" style="background:rgba(236,72,153,.15);color:#ec4899"><i
+                                    class="fas fa-map"></i></div><a href="#" class="pc-gh"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                        <h4 class="pc-title">3D Map Design</h4>
+                        <p class="pc-desc">Detailed 3D geographical and structural map using Blender for advanced
+                            visualization.</p>
+                        <div class="pc-tags"><span>Blender</span><span>3D</span><span>Visualization</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="sec">
+        <div class="container">
+            <div class="sec-head text-center reveal">
+                <span class="sec-eyebrow">Academics</span>
+                <h2 class="sec-title">Education & Certifications</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-7 reveal delay-1">
+                    <h3 class="sub-head"><i class="fas fa-graduation-cap me-2"></i>Education</h3>
+                    <div class="edu-card featured">
+                        <div class="edu-yr">2023–2027</div>
+                        <div>
+                            <h4>B.Tech – Information Technology</h4>
+                            <p>K. S. Rangasamy College of Technology</p>
+                            <div class="tag-row"><span>AI</span><span>ML</span><span>Computer Vision</span><span>Deep
+                                    Learning</span></div>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-yr">2022–23</div>
+                        <div>
+                            <h4>12th / HSC (CBSE)</h4>
+                            <p>Royal International School, Komarapalayam</p>
+                            <span class="score-pill"><i class="fas fa-star me-1"></i>80%</span>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-yr">2020–21</div>
+                        <div>
+                            <h4>10th / SSLC (CBSE)</h4>
+                            <p>Royal International School, Komarapalayam</p>
+                            <span class="score-pill"><i class="fas fa-star me-1"></i>75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 reveal delay-2">
+                    <h3 class="sub-head"><i class="fas fa-certificate me-2"></i>Certifications</h3>
+                    <div class="cert-item">
+                        <div class="cert-ico"><i class="fab fa-java"></i></div>
+                        <div class="flex-grow-1">
+                            <h5>Java Programming</h5>
+                            <p>Infosys Springboard</p>
+                        </div>
+                        <span class="cert-badge">✓ Certified</span>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-ico" style="color:#3b82f6"><i class="fab fa-python"></i></div>
+                        <div class="flex-grow-1">
+                            <h5>Python Programming</h5>
+                            <p>Infosys Springboard</p>
+                        </div>
+                        <span class="cert-badge">✓ Certified</span>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-ico" style="color:#10b981"><i class="fas fa-brain"></i></div>
+                        <div class="flex-grow-1">
+                            <h5>Machine Learning</h5>
+                            <p>Infosys Springboard</p>
+                        </div>
+                        <span class="cert-badge">✓ Certified</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-cta">
+            <div class="container text-center reveal">
+                <div class="cta-tag">Get In Touch</div>
+                <h2 class="cta-h2">Let's Build Something<br><span class="text-shimmer">Amazing Together</span></h2>
+                <p class="cta-sub">I'm always open to discussing new projects, ideas, or opportunities.</p>
+                <a href="mailto:grkarmugilan@gmail.com" class="btn btn-primary-glow btn-lg rounded-pill px-5 mt-2">
+                    <i class="fas fa-envelope me-2"></i>grkarmugilan@gmail.com
+                </a>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <div class="container d-flex justify-content-between align-items-center flex-wrap gap-3">
+                <span class="nb-brand"><span class="nb-k">K</span>armugilan<span class="nb-dot">.</span></span>
+                <div class="f-socials">
+                    <a href="https://linkedin.com/in/karmugilan-g-r" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/karmugilan22" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:grkarmugilan@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <span class="f-copy">&copy; 2026 Karmugilan G R</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
